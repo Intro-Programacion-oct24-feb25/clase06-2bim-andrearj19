@@ -3,6 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+//ingresa valores de tipo entero y si ingreso uno en cadena o uno que no de
+//resultado nos vuelve a la linea 25 hasta ingresar los valores correctos
 package manejoexepciones;
 
 import java.util.InputMismatchException;
