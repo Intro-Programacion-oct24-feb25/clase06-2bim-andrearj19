@@ -37,7 +37,7 @@ public class Ejemplo07 {
         
         }
         catch(Exception e){
-            
+            //el exception es para poder capturar la excepcion
             System.out.printf(" Lo sentimos hay un error de tipo %s\n", e);
         
         }

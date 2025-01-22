@@ -5,7 +5,6 @@
  */
 package manejoexepciones;
 
-import java.util.IllegalFormatConversionException;
 
 import java.util.Scanner;
 

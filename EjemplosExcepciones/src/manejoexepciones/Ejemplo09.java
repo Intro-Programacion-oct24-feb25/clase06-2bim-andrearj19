@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+//  GENERA UNA EXEPCION AL COLOCAR NUMEROS NEGATIVOS.
 package manejoexepciones;
 
 import java.util.InputMismatchException;
@@ -24,6 +25,7 @@ public class Ejemplo09 {
             int valor2 = entrada.nextInt();
             if (valor1 < 0 || valor2 < 0){
                throw new Exception("Número negativos");
+               //throw= lanzar
             }
             int resultado = valor1 / valor2;
             System.out.printf("Resultado %s\n", resultado);

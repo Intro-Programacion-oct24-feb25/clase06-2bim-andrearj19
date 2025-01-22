@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+//USO DEL EXCEPTION
 package manejoexepciones;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -26,7 +26,9 @@ public class Ejemplo08 {
             System.out.printf("Resultado %.2f", resultado2);
         }
         catch(Exception e){
-            
+            //el exception es para poder capturar la excepcion de cualquier tipo
+            //y si va primero y despues otro catch principalmente el exception 
+            //toma la importancia
             System.out.printf(" Lo sentimos hay un error de tipo %s\n", e);
         
         }
