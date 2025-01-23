@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package manejoexepciones;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
@@ -16,35 +17,27 @@ public class Ejemplo12 {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Ingrese cuantas operaciones quiere realizar:");
-        int valor = entrada.nextInt();
-        double[] resultados = new double[valor];
-        boolean bandera = true;
-         while (bandera) {
-        for (int i = 0; i < valor; i++) {
-            try {
-                System.out.println("Ingrese el dividendo para la operación: ");
-                double dividendo = entrada.nextDouble();
-                System.out.println("Ingrese el divisor para la operación: " );
-                double divisor = entrada.nextDouble();
-
+        try {
+            System.out.println("Ingrese cuantas operaciones quiere realizar");
+            int valor = entrada.nextInt();
+            int[] resultados = new int[valor];
+            for (int i = 0; i < resultados.length; i++) {
+                System.out.println("Ingrese el dividendo");
+                int dividendo = entrada.nextInt();
+                System.out.println("Ingrese el divisor");
+                int divisor = entrada.nextInt();
                 resultados[i] = dividendo / divisor;
-                 bandera = false;
-            } catch (ArithmeticException e) {
-                System.out.println("Error: División por cero no es permitida.");
-                resultados[i] = entrada.nextDouble();
-            } catch (Exception e) {
-                System.out.println("Error: Entrada inválida.");
-                resultados[i] = entrada.nextDouble();
             }
-        }
-
-        System.out.println("Resultados de las divisiones:");
-        for (int i = 0; i < valor; i++) {
-            System.out.printf("Resultado de la operación:" + resultados[i]);
+        } catch (ArithmeticException e) {
+            System.out.printf("(ArithmeticException) Ocurrió una "
+                    + "excepción %s\n", e);
+        } catch (InputMismatchException e) {
+            System.out.printf("(InputMismatchException) Ocurrió una "
+                    + "excepción %s:\n Ingreso un dato de tipo cadena.", e);
+        } catch (Exception e) {
+            System.out.printf("Ocurrió una excepción %s\n", e);
         }
     }
-}
 }
     
 

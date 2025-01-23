@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+//  GENERA UNA EXEPCION AL COLOCAR NUMEROS NEGATIVOS.
 package manejoexepciones;
 
 import java.util.InputMismatchException;
