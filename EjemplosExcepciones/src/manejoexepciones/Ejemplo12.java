@@ -21,6 +21,7 @@ public class Ejemplo12 {
             System.out.println("Ingrese cuantas operaciones quiere realizar");
             int valor = entrada.nextInt();
             int[] resultados = new int[valor];
+            String cadena = "Resultado de las operaciones\n";
             for (int i = 0; i < resultados.length; i++) {
                 System.out.println("Ingrese el dividendo");
                 int dividendo = entrada.nextInt();
@@ -28,6 +29,10 @@ public class Ejemplo12 {
                 int divisor = entrada.nextInt();
                 resultados[i] = dividendo / divisor;
             }
+            for(int i= 0;i<resultados.length;i++){  
+                cadena = String.format(cadena+ "\nDivisiones"+ (i+1)+"\n"+resultados[i]);
+            }                                                //(i+1)=es el contador
+            
         } catch (ArithmeticException e) {
             System.out.printf("(ArithmeticException) Ocurrió una "
                     + "excepción %s\n", e);
@@ -39,5 +44,9 @@ public class Ejemplo12 {
         }
     }
 }
+
+
+
+
     
 
