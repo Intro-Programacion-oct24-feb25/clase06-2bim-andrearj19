@@ -3,12 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//una cadena de supermercados desea analizar sus ventas de los primeros seis meses del año en distintas categorías de productos.Se han registrado las siguientes cifras de ventas mensuales(en miles de dolares)
-//        alimentos {320, 340, 360, 400, 450, 480};
-//        electrodomesticos{150,160,170,180,200,220};
-//        ropa[ {200,210,250,270,300,350};
-//        jugetes {100,120,130,140,150,180};
-//se solicita desarrollar  un programa en java que realice 
+
 
 //  GENERA UNA EXEPCION AL COLOCAR NUMEROS NEGATIVOS.
 package manejoexepciones;
